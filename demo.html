@@ -3,7 +3,7 @@
     @font-face
     {
         font-family: "Web IBM VGA 8x16";
-        src: url("./demo/web_ibm_vga_8x16.woff") format("woff");
+        src: url("./resources/web_ibm_vga_8x16.woff") format("woff");
     }
 
     #screen_container
@@ -51,24 +51,24 @@
         min-width: 880px;
     }
 </style>
-<script src="./demo/libv86.js"></script>
+<script src="./resources/libv86.js"></script>
 <script>
     "use strict";
     window.onload = function()
     {
         var emulator = window.emulator = new V86Starter({
-            wasm_path: "./demo/v86.wasm",
+            wasm_path: "./resources/v86.wasm",
             memory_size: 32 * 1024 * 1024,
             vga_memory_size: 4 * 1024,
             screen_container: document.getElementById("screen_container"),
             bios: {
-                url: "./demo/seabios.bin",
+                url: "./resources/seabios.bin",
             },
             vga_bios: {
-                url: "./demo/vgabios.bin",
+                url: "./resources/vgabios.bin",
             },
             hda: {
-                url: "./demo/mp3.img",
+                url: "./resources/mp3.img",
             },
             autostart: true,
         });
@@ -118,10 +118,5 @@
         <li>Up to six user applications running in three terminals</li>
         <li>Scheduler, VRTC, and signals support</li>
     </ul>
-</p>
-<h3>Office Hours</h3>
-<p>
-    I am hosting office hours for ECE 391 in Spring 2023.<br>
-    If you ever need help please come by 19-22 W or 18-22 F in ECEB 3026.<br>
 </p>
 <hr>
