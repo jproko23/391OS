@@ -1,10 +1,17 @@
 <!doctype html>
 <style>
     @font-face
-    {
+    {   
         font-family: "Web IBM VGA 8x16";
         src: url("./resources/web_ibm_vga_8x16.woff") format("woff");
+        
     }
+    /*
+    body 
+    {
+        color: #5DF64A;
+        background-color: #1A1A1D;
+    }*/
 
     #screen_container
     {
@@ -93,7 +100,9 @@
     <div id="emu_text"></div>
     <canvas id="emu_screen"></canvas>
     <p id="hint_text">
-        <b>Press Alt+F1/F2/F3 to switch terminal. Press Ctrl+C to interrupt. Press Ctrl+H to get help.<br></b>
+        <b>Use Tab to autocomplete files/commands and the up arrow to restore the last command!<br> 
+        Press Alt+F1/F2/F3 to switch terminal, Ctrl+L to clear the screen, and esc to return to the GUI.<br>
+        </b>
         For more combinational keys and technical info, please refer to the <a href="./overview.html" target="_blank">Technical Overview</a> page.<br>
         This page is best viewed on a computer. Refresh the page to reset the emulator.<br>
     </p>
