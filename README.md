@@ -1,3 +1,3 @@
 # 391OS
 Custom Operating System Built for MP3 of ECE391
-> Visit [os-prokop.info](https://os-prokop.info/) to explore our OS!
+> Visit [jproko23.github.io/391OS/](https://jproko23.github.io/391OS/) to explore our OS!
